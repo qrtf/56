@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'berthold_akzidenz_grotesk_bRg';
+    src: url('akzidenzgroteskbe-regular-webfont.woff2') format('woff2'),
+         url('akzidenzgroteskbe-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'akzidenz-grotesk_bqbold';
+    src: url('akzidenzgrotesk-bold-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'akzidenz-grotesk_bqmedium';
+    src: url('akzidenzgrotesk-medium-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    background-color: #009571 ;
+   
+    color: white;
+}
+@media(min-width: 0px){
+    body{
+        padding: 5%;
+        
+    }
+    header{
+        display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    font-size: 17px;
+    animation: p-load 800ms ease-out 2000ms;
+    animation-fill-mode: forwards;
+}
+.enunciado{
+    animation: p-load 800ms ease-out 2000ms;
+    animation-fill-mode: forwards;
+}
+main{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+p{
+    font-family: 'berthold_akzidenz_grotesk_bRg';
+    font-size: 17px;
+}
+h3{
+    font-family: 'berthold_akzidenz_grotesk_bRg';}
+    ol{
+        font-family: akzidenz-grotesk_bqmedium;
+        margin-left: 15px; 
+        padding: 0%;
+        animation: padding-ol 2300ms ease-out 3000ms;
+        animation-fill-mode: forwards;
+    }
+    li{
+        padding-left: 10px;
+        padding-bottom: 20px;
+        font-size: 17px;
+        
+    }
+    footer{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 15vh;
+        animation: p-load 800ms ease-out 2000ms;
+        animation-fill-mode: forwards;
+    }
+    
+    .num{
+        display: flex;
+        align-content: center;
+
+        
+    }
+    .qr{
+        width:100%
+    }
+    .descripcion{
+        
+        opacity: 0;
+        animation: description 400ms ease-out 5000ms;
+        animation-fill-mode: forwards;
+        font-size: 0px;
+        
+        
+        
+    }
+    .correcta{
+        animation: correct-li 2300ms ease-out 3000ms;
+        width:100%;
+        animation-fill-mode: forwards;
+    }   
+    
+    .incorrecta{
+        animation: p-load 800ms ease-out 2000ms;
+        animation-fill-mode: forwards;
+    }
+    section{
+        opacity: 0;
+        animation: description 400ms ease-out 5000ms;
+        animation-fill-mode: forwards;
+        font-size: 0;
+    }
+    .div-descripcion{
+        animation: correct 2300ms ease-out 3000ms;
+        animation-fill-mode: forwards;
+    }
+    @keyframes description {
+        0%{
+            opacity: 0;
+            font-size: 17px;
+            scale: .9;
+           
+            
+            
+        }
+
+        
+        100%{
+            opacity: 1 ;
+            scale: 1;
+            font-size: 17px;
+        }
+    }
+    @keyframes padding-ol {
+        0%{
+            padding: 0;
+        }
+        100%{
+            padding:0px
+        }
+    }
+    @keyframes correct-li {
+        0%{
+            transform: translateY(0px);
+            /* font-size: 17px; */
+            scale: 1;
+            
+        }
+        100%{
+            /* font-size:30px; */
+            scale:1.05;
+            
+            transform: translateY(-80px);
+        }
+    }
+    @keyframes correct{
+        0%{
+            
+            
+            transform: translateY(0px)
+            
+        }
+        100%{
+            
+            transform: translateY(-150px);
+            
+            
+        }
+    }
+    @keyframes p-load{
+        0%{
+            
+        opacity: 1;;
+    }
+    100%{
+        
+        opacity: 0;
+    }
+}
+}
+@media(min-width:376px){
+    p{
+        font-size:19px
+    }
+    li{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 19px;
+    }
+       @keyframes description {
+        0%{
+            opacity: 0;
+            font-size: 19px;
+            scale: .9;
+           
+            
+            
+        }
+
+        
+        100%{
+            opacity: 1 ;
+            scale: 1;
+            font-size: 19px;
+        }
+    }
+    @keyframes padding-ol {
+        0%{
+            padding: 0;
+        }
+        100%{
+            padding-left:0px
+        }
+    }
+    
+}
+
+@media(min-width: 427px){
+    
+    p{
+        font-size:21px
+    }
+    li{
+        font-size: 21px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    @keyframes padding-ol {
+        0%{
+            padding: 0;
+        }
+        100%{
+            padding-left:0px
+        }
+    }
+       @keyframes description {
+        0%{
+            opacity: 0;
+            font-size: 21px;
+            scale: .9;
+           
+            
+            
+        }
+
+        
+        100%{
+            opacity: 1 ;
+            scale: 1;
+            font-size: 21px;
+        }
+    }
+    @keyframes padding-ol {
+        0%{
+            padding: 0;
+        }
+        100%{
+            padding-left:0px
+        }
+    }
+
+} 
+@media(max-height:550px){
+    @keyframes correct{
+        0%{
+            
+            
+            transform: translateY(0px)
+            
+        }
+        100%{
+            
+            transform: translateY(-150px);
+            
+            
+        }
+    }
+    p{
+        font-size: 11px;
+
+    }
+    li{
+        font-size: 11px;
+
+    }
+    h3{
+        font-size: 13px;
+    }
+      @keyframes description {
+        0%{
+            opacity: 0;
+            font-size: 0px;
+            
+            
+        }
+        99%{
+            font-size: 0px;
+        }
+        
+        100%{
+            opacity: 1 ;
+            font-size: 11px;
+        }
+    }
+    
+}
+@media(min-height:700px){
+    @keyframes correct{
+        0%{
+            
+            
+            transform: translateY(0px)
+            
+        }
+        100%{
+            
+            transform: translateY(-200px);
+            
+            
+        }
+    }
+
+}
+@media(min-width: 830px){
+
+    p{
+        font-size:25px
+    }
+    li{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 25px;
+    }
+     @keyframes description {
+        0%{
+            opacity: 0;
+            font-size: 25px;
+            scale: .9;
+           
+            
+            
+        }
+
+        
+        100%{
+            opacity: 1 ;
+            scale: 1;
+            font-size: 25px;
+        }
+    }
+    @keyframes padding-ol {
+        0%{
+            padding: 0;
+        }
+        100%{
+            padding-left:64px
+        }
+    }
+
+} 
